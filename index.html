@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Xây dựng lớp mô tả điện thoại</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div>
+    <label>Nokia (<span id="pin">100</span>)% : <span id="status">Bật</span></label><br>
+    <label for="soanthao">Soạn thảo tin nhắn :</label><br>
+    <textarea id="soanthao" onkeyup="nokia.settxtSoanThao(this.value)"></textarea><br>
+    <button onclick="SendMessage(nokia.getId())">Gửi</button>
+    <br>
+    <label for="thuden">Hộp thư đến</label><br>
+    <textarea id="thuden"readonly></textarea><br>
+    <br>
+    <label for="tindagui">Tin Đã Gửi</label><br>
+    <textarea id="tindagui"readonly></textarea><br>
+</div>
+<hr>
+<div>
+    <label>Iphone (<span id="pinIp">100</span>)%: <span id="statusIp">Bật</span></label><br>
+    <label for="soanthaoIp">Soạn thảo tin nhắn :</label><br>
+    <textarea id="soanthaoIp" onkeyup="iphone.settxtSoanThao(this.value)"></textarea><br>
+    <button onclick="SendMessage(iphone.getId())">Gửi</button><br>
+    <label for="thudenIp">Hộp thư đến</label><br>
+    <textarea id="thudenIp" readonly></textarea><br>
+    <br>
+    <label for="tindaguiIp">Tin Đã Gửi</label><br>
+    <textarea id="tindaguiIp" readonly></textarea><br>
+
+</div>
+<script src="js.js"></script>
+</body>
+</html>
